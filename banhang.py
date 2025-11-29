@@ -7,7 +7,7 @@ if 'page' not in st.session_state:
 with st.sidebar:
     st.title('Vương quốc mô hình')
     st.header('Chào mừng bạn đến Vương quốc mô hình!')
-    st.image('vuongquocmohinh.jpg')
+    st.image('python/lesson9/vuongquocmohinh.jpg')
     st.write('Chúng tôi chuyên bán các mô hình nhân vật hoạt hình chất lượng...')
     st.write(':house: Địa chỉ cửa hàng:')
     st.write(':phone: Điện thoại liên hệ')
@@ -98,4 +98,5 @@ if print_bill:
     ans = ''
     for x in bill:
         ans += str(x) + ' ' + str(bill[x]) + '\n'
+
     st.download_button('In hoá đơn', ans)
